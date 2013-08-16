@@ -36,7 +36,7 @@ OpenCV1.0 example compiled to JavaScript.
 
 ```bash
   make run-c
-  make run-c 
+  make run-c ARGV=facebook.jpg
 ```
 ###Compile js code: 
 
