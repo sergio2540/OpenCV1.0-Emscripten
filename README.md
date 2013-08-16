@@ -1,7 +1,7 @@
 OpenCV1.0-Emscripten 
 ===========
 
-OpenCV1.0 compiled to JavaScript. 
+OpenCV1.0 example compiled to JavaScript. 
 
 ##Requirements:
   * [Emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
