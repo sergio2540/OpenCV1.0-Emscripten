@@ -1,0 +1,20 @@
+{ "program" : { 
+		 "code" : "./build/gray.js",
+		 "compress" : "./lib/LZString.js",
+		 "data" : [   { "input" : { 
+					      "argv"  : [],
+					      "files" : [{
+							    "name" : "/facebook.jpg",
+							    "content" : "../../img/facebook.jpg"
+							 }]
+			    },
+		  "output" : {
+				"files" : [{
+					    "name" : "/gray.jpg"
+					  }]
+			     }
+			
+	     }]
+}
+}
+
