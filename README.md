@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 OpenCV1.0-Emscripten 
 ===========
 
@@ -71,7 +70,3 @@ OpenCV1.0 compiled to JavaScript.
 ```
 
 #####See: [Makefile](https://github.com/sergio2540/OpenCV1.0-Emscripten/blob/master/Makefile)
-=======
-OpenCV1.0-Emscripten
-=================
->>>>>>> 83ac7abeb98d75b3ec1651ea15333355c3b09ddd
