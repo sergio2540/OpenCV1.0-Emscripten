@@ -56,7 +56,7 @@ OpenCV1.0 example compiled to JavaScript.
 ```bash
    make run-example
    cd ./example
-   ls
+   gthumb gray.jpg
 ```
 
 ###Run js with [program-editor](https://github.com/crowdprocess/program-editor): 
