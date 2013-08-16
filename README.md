@@ -14,6 +14,7 @@ OpenCV1.0 example compiled to JavaScript.
   
 #####See: [template.mustache](https://github.com/sergio2540/FireSim-Emscripten/blob/master/crowdprocess/pre/template/template.mustache)
 
+ * [Building projects](https://github.com/kripken/emscripten/wiki/Building-Projects)
  * [HOWTO: Port a C/C++ Library to JavaScript (xml.js)@blog.mozakai](http://mozakai.blogspot.pt/2012/03/howto-port-cc-library-to-javascript.html)
  * [OpenCV 1.0 Docs](http://www.cognotics.com/opencv/docs/1.0/)
 
