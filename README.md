@@ -24,6 +24,7 @@ OpenCV1.0 example compiled to JavaScript.
 ###Install: 
 
 ```bash
+  git clone https://github.com/sergio2540/OpenCV1.0-Emscripten.git
   cd ./OpenCV1.0-Emscripten 
   make install
 ```
