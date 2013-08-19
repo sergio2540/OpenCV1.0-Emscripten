@@ -20,7 +20,7 @@ LIBC=`pkg-config --libs opencv`
 LIBJS= ../crowdprocess/libs/libcv.a ../crowdprocess/libs/libcvaux.a ../crowdprocess/libs/libhighgui.a ../crowdprocess/libs/libcxcore.a ../crowdprocess/libs/libml.a
 
 #C sources
-SOURCES= toGray.c
+SOURCES= facedetect.c
 
 #Executable name
 EXEC=gray
@@ -34,11 +34,11 @@ EMCC=/home/sergio/emscripten/emcc
 #Flags for emscripten C compiler
 #-O<optimization level>
 #See: https://github.com/kripken/emscripten/wiki/Optimizing-Code
-EMCCFLAGS=-O2
+EMCCFLAGS=-O0
 
 #Various compiling-to-JS parameters.
 #See https://github.com/kripken/emscripten/blob/master/src/settings.js
-SETTINGS= -s VERBOSE=1 -s ASMJS=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s LINKABLE=1 -s INVOKE_RUN=0
+SETTINGS= -s ASMJS=0 -s LINKABLE=1 -s INVOKE_RUN=0
 
 #gray arguments  
 
@@ -71,9 +71,7 @@ RESULTS_DIR= $(CROWDPROCESS_DIR)/results
 all: c cp
 
 install:
-	sudo npm install -g https://github.com/CrowdProcess/program-editor/archive/master.tar.gz
-	sudo npm install -g crowdprocess-cli
-	sudo npm install -g
+	./install.sh
 
 #tested:ok
 c: 
@@ -94,10 +92,10 @@ cp:
 	mkdir -p $(CROWDPROCESS_DIR)/data
 	mkdir -p $(CROWDPROCESS_DIR)/pre/build
 	cd $(C_DIR) && \
-	$(EMCC) $(EMCCFLAGS) $(SOURCES) $(LIBJS) $(SETTINGS) -o ../$(CROWDPROCESS_DIR)/pre/build/$(EXEC).js; 
+	$(EMCC) $(EMCCFLAGS) $(SOURCES) $(LIBJS) $(SETTINGS) --embed-file lena.tiff -o ../$(CROWDPROCESS_DIR)/pre/build/$(EXEC).js ; 
 	cd $(CROWDPROCESS_DIR)/pre/ && \
 	cat ./data/data.json | gencpd --compress ./lib/LZString > ../$(DATA) && \
-	cat ./view/view.json | gencpp --template ./template/template.mustache > ../build/$(EXEC).js
+	cat ./view/view_face.json | gencpp --template ./template/template.mustache > ../build/$(EXEC).js
 
 
 run-editor:

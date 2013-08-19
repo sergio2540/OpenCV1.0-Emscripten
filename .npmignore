@@ -1,0 +1,12 @@
+.git*
+c
+img
+emscripten
+example
+crowdprocess/libs
+crowdprocess/include
+crowdprocess/build
+crowdprocess/data
+crowdprocess/results
+
+

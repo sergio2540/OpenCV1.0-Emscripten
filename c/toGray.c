@@ -21,7 +21,7 @@ int main(int argc,char*argv[]){
         
 	
 	//save
-        cvSaveImage("gray.jpg",gimg);
+        cvSaveImage("gray.tiff",gimg);
 	//cvReleaseImage(&cimg);
 	//cvReleaseImage(&gimg);
 }
