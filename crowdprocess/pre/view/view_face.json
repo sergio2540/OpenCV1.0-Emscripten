@@ -1,0 +1,24 @@
+{ "program" : { 
+		 "code" : "./build/gray.js",
+		 "compress" : "./lib/LZString.js",
+		 "data" : [   { "input" : { 
+					      "argv"  : [],
+					      "files" : [{
+							    "name" : "/lena.jpeg",
+							    "content" : "../../img/t.jpg"
+							 },
+							 {
+							    "name" : "/haarcascade_frontalface_alt2.xml",
+							    "content" : "../../img/haarcascade_frontalface_alt2.xml"
+							 }]
+			    },
+		  "output" : {
+				"files" : [{
+					    "name" : "/result.jpg"
+					  }]
+			     }
+			
+	     }]
+}
+}
+
