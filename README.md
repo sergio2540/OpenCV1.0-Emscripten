@@ -53,7 +53,7 @@ OpenCV1.0 example compiled to JavaScript.
 
 ######See: [Explain crowdprocess/view/data](https://gist.github.com/sergio2540/fac873fccde43bb98b44)
 
-###Run gray.js example: 
+###Run facedetect.js example: 
 
 ```bash
    make run-facedetect
