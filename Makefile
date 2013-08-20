@@ -34,11 +34,11 @@ EMCC=/home/sergio/emscripten/emcc
 #Flags for emscripten C compiler
 #-O<optimization level>
 #See: https://github.com/kripken/emscripten/wiki/Optimizing-Code
-EMCCFLAGS=-O1
+EMCCFLAGS=-O0
 
 #Various compiling-to-JS parameters.
 #See https://github.com/kripken/emscripten/blob/master/src/settings.js
-SETTINGS= -s ASMJS=0 -s LINKABLE=1 -s INVOKE_RUN=0
+SETTINGS= -s TOTAL_MEMORY=8*16777216 -s ASMJS=0 -s INVOKE_RUN=0
 
 #gray arguments  
 
@@ -96,6 +96,11 @@ cp:
 	cd $(CROWDPROCESS_DIR)/pre/ && \
 	cat ./data/data.json | gencpd --compress ./lib/LZString > ../$(DATA) && \
 	cat ./view/view.json | gencpp --template ./template/template.mustache > ../build/$(EXEC).js
+
+#tested:ok
+
+run-facedetect: 
+	cd ./example && node facedetect.js
 
 
 run-editor:

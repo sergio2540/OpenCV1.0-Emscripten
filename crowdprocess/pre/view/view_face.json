@@ -1,15 +1,12 @@
 { "program" : { 
-		 "code" : "./build/gray.js",
+		 "code" : "./build/facedetect.js",
 		 "compress" : "./lib/LZString.js",
 		 "data" : [   { "input" : { 
 					      "argv"  : [],
-					      "files" : [{
-							    "name" : "/lena.jpeg",
-							    "content" : "../../img/t.jpg"
-							 },
+					      "files" : [
 							 {
 							    "name" : "/haarcascade_frontalface_alt2.xml",
-							    "content" : "../../img/haarcascade_frontalface_alt2.xml"
+							    "content" : "../../img/data/haarcascade_frontalface_alt_tree.xml"
 							 }]
 			    },
 		  "output" : {

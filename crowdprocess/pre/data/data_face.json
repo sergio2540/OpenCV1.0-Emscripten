@@ -1,0 +1,142 @@
+[
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/lena.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/model.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/stig.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/friends.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/tiago.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/crowdprocess.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/dog.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/pedro.tiff"
+      }]
+    }
+  },
+  {
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/group.tiff"
+      }]
+    }
+  },
+{
+    "input": {
+      "argv": [
+        {
+          "arg": "face.tiff",
+          "pos": "0"
+        }
+      ],
+      "files": [{
+        "name": "/face.tiff",
+        "content": "../../img/random.tiff"
+      }]
+    }
+  }
+]

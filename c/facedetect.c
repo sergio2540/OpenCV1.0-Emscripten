@@ -92,7 +92,8 @@ int main( int argc, char** argv )
     else
     {
     */
-        const char* filename = input_name ? input_name : (char*)"lena.tiff";
+        const char* filename = input_name ? input_name : argv[1];
+
         IplImage* image = cvLoadImage( filename, 1 );
 	if(image == NULL){
 		printf("error %s",filename);	
@@ -183,7 +184,7 @@ void detect_and_draw( IplImage* img )
     }
 
     //cvShowImage( "result", img );
-    cvSaveImage("result.tiff",img);
+    cvSaveImage("result.jpg",img);
     cvReleaseImage( &gray );
     cvReleaseImage( &small_img );
 }
