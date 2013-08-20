@@ -113,7 +113,7 @@ io:
 	cat $(CROWDPROCESS_DIR)/$(DATA) | crowdprocess io -p $(CROWDPROCESS_DIR)/build/$(EXEC).js > $(RESULTS_DIR)/results.json
 	node post/processResults.js $(RESULTS_DIR)/results.json
 
-run-example: 
+run-gray: 
 	cd ./example && node gray.js
 	
 
