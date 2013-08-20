@@ -100,7 +100,7 @@ cp:
 #tested:ok
 
 run-facedetect: 
-	cd ./example && node facedetect.js
+	cd ./example && node facedetect.min.js
 
 
 run-editor:
@@ -114,7 +114,7 @@ io:
 	node post/processResults.js $(RESULTS_DIR)/results.json
 
 run-gray: 
-	cd ./example && node gray.js
+	cd ./example && node gray.min.js
 	
 
 clean:
