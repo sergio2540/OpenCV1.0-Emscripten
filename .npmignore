@@ -8,5 +8,7 @@ crowdprocess/include
 crowdprocess/build
 crowdprocess/data
 crowdprocess/results
+install.sh
+Makefile
 
 
