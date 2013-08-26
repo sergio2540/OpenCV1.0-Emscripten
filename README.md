@@ -5,6 +5,8 @@ OpenCV1.0 example compiled to JavaScript.
 
 ##Requirements:
   * [Emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
+  * [crp-reagenzglas](https://github.com/CrowdProcess/crp-reagenzglas)
+  * [crowdprocess-cli](https://github.com/CrowdProcess/crp-cli)
 
 ##Recommended reading:
  * [Mustache manual](http://mustache.github.io/mustache.5.html)
@@ -67,12 +69,14 @@ OpenCV1.0 example compiled to JavaScript.
    gthumb gray.tiff
 ```
 
-###Run js with [program-editor](https://github.com/crowdprocess/program-editor): 
+###Run js with [crp-reagenzglas](https://github.com/CrowdProcess/crp-reagenzglas): 
 
 ```bash
    make run-editor
 ```
+
 ###Run js with [crowdprocess-cli](https://github.com/CrowdProcess/crp-cli):
+
 ```bash
    make run-io
 ```
