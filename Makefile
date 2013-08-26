@@ -104,7 +104,7 @@ run-facedetect:
 
 
 run-editor:
-	@program-editor -p $(CROWDPROCESS_DIR)/build/$(EXEC).js
+	reagenzglas -p $(CROWDPROCESS_DIR)/build/$(EXEC).js
 
 run-io: io 
 
